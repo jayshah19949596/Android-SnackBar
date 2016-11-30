@@ -508,18 +508,47 @@ public class DBMgr {
         return cursor;
     }
 
+    public void updateDish(String dishName, String cuisineType, String price,String description) {
+        ContentValues updatedValues = new ContentValues();
+        updatedValues.put(MENU_CUISINETYPE, cuisineType);
+        updatedValues.put(MENU_PRICE, price);
+        updatedValues.put(MENU_DESCRIPTION, description);
+
+
+        String where = MENU_DISHES +" = ?";
+        db.update(MENU_TABLE, updatedValues, where, new String[]{dishName});
+    }
+
+
+    public void addDishToMenu(String dishName , String cuisineType, String description, String price){
+
+        ContentValues newValues9 = new ContentValues();
+        newValues9.put(MENU_CUISINETYPE, cuisineType);
+        newValues9.put(MENU_DISHES, dishName);
+        newValues9.put(MENU_PRICE, price);
+        newValues9.put(MENU_DESCRIPTION, description);
+        db.insert(MENU_TABLE, null, newValues9);
+
+    }
+
+    public void deleteDish(String dishName) {
+
+        String where = MENU_DISHES+"=?";
+        db.delete(MENU_TABLE, where,
+                new String[]{dishName});
+        return ;
+    }
+
 
 
     public Cursor getSingleMenu(String dishName) {
 
-        String orderBy =  MENU_CUISINETYPE + " DESC";
 
         Cursor cursor = db.query(MENU_TABLE , null, MENU_DISHES+" =?",
                 new String[]{dishName}, null, null, null);
 
         cursor.moveToFirst();
         String s = String.valueOf(cursor);
-        Log.d("Cursor query value",cursor.getString(cursor.getColumnIndex(MENU_DESCRIPTION)));
 
 
 

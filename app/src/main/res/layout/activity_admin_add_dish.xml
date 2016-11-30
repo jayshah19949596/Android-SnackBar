@@ -46,7 +46,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:id="@+id/editTextName"/>
+                android:id="@+id/editTextAddDishName"
+                android:singleLine="true"
+                />
 
 
         </RelativeLayout>
@@ -88,7 +90,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:id="@+id/editTextName"/>
+                android:id="@+id/editTextAddCuisineType"
+                android:singleLine="true"
+                />
 
 
         </RelativeLayout>
@@ -136,7 +140,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:id="@+id/editTextName1"/>
+                    android:id="@+id/editTextAddDescription"
+                    android:singleLine="true"
+                    />
 
 
 
@@ -165,7 +171,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="First Name :"
+                android:text="Price :"
                 android:layout_marginTop="25dp"
                 android:layout_marginLeft="15dp"/>
 
@@ -185,7 +191,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:id="@+id/editTextName"/>
+                android:id="@+id/editTextAddPrice"
+                android:singleLine="true"
+                />
 
 
         </RelativeLayout>
@@ -204,6 +212,7 @@
             android:layout_marginBottom="20dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
+            android:id="@+id/btnAddDishToMenu"
             android:text="Add Dish to Menu"
             />
 

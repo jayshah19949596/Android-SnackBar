@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:id="@+id/editTextEmail"
+                android:id="@+id/editTextDishName"
                 android:singleLine="true"
                 />
 
@@ -57,7 +57,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="10dp"
                 android:text="Populate Details"
-                android:id="@+id/buttonPopulate"/>
+                android:id="@+id/btnPopulate"/>
 
 
         </RelativeLayout>
@@ -101,7 +101,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:id="@+id/editTextName"
+                android:id="@+id/editTextCuisineType"
                 android:singleLine="true"/>
 
 
@@ -151,7 +151,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:id="@+id/editTextName1"
+                    android:id="@+id/editTextDescription"
                     android:singleLine="true"/>
 
 
@@ -183,7 +183,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="First Name :"
+                android:text="Price :"
                 android:layout_marginTop="25dp"
                 android:layout_marginLeft="15dp"/>
 
@@ -203,7 +203,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:id="@+id/editTextName"
+                android:id="@+id/editTextPrice"
                 android:singleLine="true"/>
 
 
@@ -225,6 +225,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="Update Dish"
+            android:id="@+id/btnUpdateDish"
             />
 
     </RelativeLayout>

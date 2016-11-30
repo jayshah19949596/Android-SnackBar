@@ -1,20 +1,66 @@
 package com.example.jaysh.snackbar;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class DeleteDish extends AppCompatActivity {
+    EditText dishName;
+    DBMgr dataBaseAdapter;
+    Button delDish;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_delete_dish);
+        dataBaseAdapter = DBMgr.getInstance(this);
+        dataBaseAdapter.open();
+        dishName = (EditText) findViewById(R.id.editTextDeleteDish);
+        delDish = (Button) findViewById(R.id.buttonDeleteDish);
+
+        delDish.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+                callDelete();
+                Toast.makeText(DeleteDish.this,"Dish deleted from Menu successfully",Toast.LENGTH_SHORT).show();
+
+            }
+        });
     }
+
+    public void callDelete(){
+        if(dishName.getText().toString().length()==0){
+            Toast.makeText(DeleteDish.this,"Please Enter EmailID",Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Log.d("Modify_Employee", "Nothing");
+
+            Cursor getSingleMenuCursor = dataBaseAdapter.getSingleMenu(dishName.getText().toString());
+
+            if(getSingleMenuCursor.getCount()==0) {
+                Toast.makeText(DeleteDish.this,"No such Dish to Delete",Toast.LENGTH_SHORT).show();
+
+            }
+
+            else {
+                dataBaseAdapter.deleteDish(dishName.getText().toString());
+            }
+
+        }
+
+    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

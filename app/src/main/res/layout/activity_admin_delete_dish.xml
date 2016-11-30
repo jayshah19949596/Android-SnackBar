@@ -58,7 +58,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:id="@+id/editTextName"/>
+                        android:id="@+id/editTextDeleteDish"/>
 
 
 
@@ -84,7 +84,8 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="50dp"
-            android:text="Delete Dish From Menu"/>
+            android:text="Delete Dish From Menu"
+            android:id="@+id/buttonDeleteDish"/>
 
 
 
