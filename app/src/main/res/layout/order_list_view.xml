@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="OrderNumber"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp"
+    android:padding="20dp"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/textView"
+    android:textSize="30sp"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:descendantFocusability="blocksDescendants"
+    />
+

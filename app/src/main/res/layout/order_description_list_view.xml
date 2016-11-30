@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dish Name : "
+            android:id="@+id/textDN"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="3dp"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samosa "
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textDN"
+            android:id="@+id/textDNValue"
+            android:textStyle="bold"
+            android:padding="3dp"
+
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 "
+            android:layout_alignParentRight="true"
+            android:padding="3dp"
+
+            android:id="@+id/textViewQauntityValue"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity : "
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/textViewQauntityValue"
+            android:padding="3dp"
+
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

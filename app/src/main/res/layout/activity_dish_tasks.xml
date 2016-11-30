@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jaysh.snackbar.EmployeeTasks">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Dish"
+        android:id="@+id/button_add_dish"
+        android:paddingRight="48dp"
+        android:paddingLeft="48dp"
+        android:layout_above="@+id/button_delete_dish"
+        android:layout_alignStart="@+id/button_delete_dish"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Dish"
+        android:id="@+id/button_delete_dish"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modify Dish Details"
+        android:id="@+id/button_modify_dish"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button_delete_dish"
+        android:layout_alignEnd="@+id/button_delete_dish" />
+</RelativeLayout>

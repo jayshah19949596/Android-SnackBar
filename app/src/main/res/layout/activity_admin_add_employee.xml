@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="0dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Employee Details"
+        android:gravity="center_horizontal"
+        android:padding="20dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextUserNameToSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:hint=" Name"
+        android:singleLine="true"
+
+        >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextUserIdToSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:hint="Email Id"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/editTextPasswordToSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/editTextConfirmPasswordToSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/editTextAddressToSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:hint="Address"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/editTextCityToSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:hint="City"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/editTextZipCodeToSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:hint="ZipCode"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/editTextCountryToSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:hint="Country"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/editTextNumberToSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:hint="Mobile Number "
+        android:singleLine="true"/>
+
+
+    <Button
+        android:id="@+id/buttonSignup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account" />
+
+</LinearLayout>
+
