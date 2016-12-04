@@ -30,6 +30,7 @@ public class LogIn extends AppCompatActivity implements View.OnClickListener {
     String password;
     static String userName,address;
     static  Customer customer;
+    static Cursor userCursor;
 
     /*Creating DatbaseAdapter Refrence variable */
     DBMgr DBMgr;
@@ -112,8 +113,21 @@ public class LogIn extends AppCompatActivity implements View.OnClickListener {
 
 
                 String storedPassword = DBMgr.getPassword(emailID);
-                Cursor userCursor = DBMgr.getSinlgeUser(emailID);
+                userCursor = DBMgr.getSinlgeUser(emailID);
+
+
+
+                if (userCursor.getCount()==0)
+                {
+                    Toast.makeText(LogIn.this,
+                            "User does Not Exist",
+                            Toast.LENGTH_LONG).show();
+                    return;
+
+                }
+
                 LoginProfile lprofile = new LoginProfile();
+
                 lprofile.LoginProfile(userCursor);
                 Log.d("LOGIN","user input email id is "+emailID);
                 Log.d("LOGIN","stored password is "+storedPassword);
@@ -139,7 +153,7 @@ public class LogIn extends AppCompatActivity implements View.OnClickListener {
                     Log.d("LogIn.java",String.valueOf(userCursor.getString(userCursor.getColumnIndex(DBMgr.USERPROFILE_ROLE)).equals("CUSTOMER")));
                     if(userCursor.getString(userCursor.getColumnIndex(DBMgr.USERPROFILE_ROLE)).equals("CUSTOMER")) {
                         customer = new Customer();
-
+                        customer.Customer(userCursor);
 
 
                         Log.d("LogIn.java","User Login Role CUSTOMER");

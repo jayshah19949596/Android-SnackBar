@@ -25,7 +25,7 @@ public class Payment extends AppCompatActivity {
     EditText editTextAddress;
     DBMgr DBMgr;
     Cursor cursor;
-
+    RadioButton rb,rb1,rb2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,11 +44,14 @@ public class Payment extends AppCompatActivity {
         {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
-                RadioButton rb = (RadioButton) radioGroup.findViewById(checkedId);
+                rb = (RadioButton) radioGroup.findViewById(checkedId);
+                Log.d("CartScreen.java",String.valueOf(rb));
 
+                rb2=(RadioButton)findViewById(R.id.rbChangeAddress);
+                rb1=(RadioButton)findViewById(R.id.rbDefault);
                 switch(checkedId) {
                     case R.id.rbChangeAddress:
-                        Log.d("Paymeny","In changeadress switch");
+                        Log.d("Payment.java",String.valueOf(rb.getId()));
                         tvAddress.setVisibility(View.VISIBLE);
                         editTextAddress.setVisibility(View.VISIBLE);
                         /*LinearLayout ll = (LinearLayout) findViewById(R.id.linearlayout);
@@ -62,7 +65,7 @@ public class Payment extends AppCompatActivity {
 
                     case R.id.rbDefault:
 
-                        Log.d("Paymeny","In defaultadress switch");
+                        Log.d("Payment.java",String.valueOf(rb.getId()));
                         tvAddress.setVisibility(View.GONE);
                         editTextAddress.setVisibility(View.GONE);
                         /*Toast.makeText(getBaseContext(), "You have Clicked fixed",
@@ -76,26 +79,35 @@ public class Payment extends AppCompatActivity {
                         break;
                 }
 
-                Log.d("Paymeny","out of switch");
+                Log.d("Payment","out of switch");
 
             }
         });
 
         buttonPayment.setOnClickListener(new View.OnClickListener() {
 
+
             public void onClick(View v) {
 
-                Toast.makeText(Payment.this,
-                        "Payment Successful", Toast.LENGTH_SHORT)
-                        .show();
 
 
 
+                int address_decider = checkDeliveryAddress();
+                if(address_decider==0){
+                    return;
+                }
 
                 Order order = new Order();
                 order.Order();
+                if(address_decider==2){
+                    order.mAddress = editTextAddress.getText().toString();
+                }
                 DBMgr.insertOrder();
-                /*final Dialog dialog = new Dialog(Payment.this);
+
+                Toast.makeText(Payment.this,
+                        "                 Payment Successful \n\n Estimated Delivery Time is : "+order.mEstimatedDeliveryTime, Toast.LENGTH_LONG)
+                        .show();
+                /*final Dialog dialog = new Dialog(Paymaent.this);
                 dialog.setContentView(R.layout.login);
                 dialog.setTitle("PAYMENT SUCCESSFUL");
                 dialog.show();
@@ -122,11 +134,33 @@ public class Payment extends AppCompatActivity {
 
 
 
-                Log.d("CartScreen.java", "User Login Role ADMIN");
                 Intent intentPayment = new Intent(Payment.this, MenuActivity.class);
                 startActivity(intentPayment);
             }
         });
+    }
+
+
+    public int checkDeliveryAddress(){
+
+        if (rb==null){
+            Toast.makeText(Payment.this,
+                    "Please select the delivery address", Toast.LENGTH_SHORT)
+                    .show();
+            return 0;
+        }
+
+
+        if(rb.getId()==rb2.getId())
+        {
+            Log.d("Payment.java", "Change Addresss");
+            return 2;
+        }
+        Log.d("CartScreen.java",String.valueOf(rb.getId()));
+
+        return 1;
+
+
     }
 
     @Override

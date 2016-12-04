@@ -16,6 +16,7 @@ public class DeleteEmployee extends AppCompatActivity {
     EditText emailID;
     DBMgr dataBaseAdapter;
     Button delEmp;
+    int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,9 @@ public class DeleteEmployee extends AppCompatActivity {
             public void onClick(View view) {
 
                 callDelete();
+                if(i==1){
+                    return;
+                }
                 Toast.makeText(DeleteEmployee.this,"Employee account deleted successfully",Toast.LENGTH_SHORT).show();
 
             }
@@ -49,7 +53,7 @@ public class DeleteEmployee extends AppCompatActivity {
 
             if(userCursor.getCount()==0) {
                 Toast.makeText(DeleteEmployee.this,"No such Employee to Delete",Toast.LENGTH_SHORT).show();
-
+                i=1;
             }
 
             else {

@@ -6,14 +6,14 @@ import android.database.Cursor;
  * Created by jaysh on 11/23/2016.
  */
 public class User {
-    String mUserName;
-    String mUserId;
-    String mPassword;
-    String mAddress;
-    String mCity;
-    String mZipCode;
-    String mCountry;
-    String mNumber;
+    static String mUserName;
+    static String mUserId;
+    static String mPassword;
+    static String mAddress;
+    static String mCity;
+    static String mZipCode;
+    static String mCountry;
+    static String mNumber;
     public  void User(Cursor userCursor){
         mUserName = userCursor.getString(userCursor.getColumnIndex(DBMgr.USERPROFILE_NAME));
         mUserId = userCursor.getString(userCursor.getColumnIndex(DBMgr.USERPROFILE_EMAIL));

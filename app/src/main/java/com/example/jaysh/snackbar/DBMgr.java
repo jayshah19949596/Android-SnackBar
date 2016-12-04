@@ -508,7 +508,7 @@ public class DBMgr {
         return cursor;
     }
 
-    public void updateDish(String dishName, String cuisineType, String price,String description) {
+    public void updateDish(String dishName, String cuisineType, String price, String description) {
         ContentValues updatedValues = new ContentValues();
         updatedValues.put(MENU_CUISINETYPE, cuisineType);
         updatedValues.put(MENU_PRICE, price);

@@ -94,8 +94,10 @@ public class ModifyDish extends AppCompatActivity {
 
         dataBaseAdapter.updateDish(dishNameToSearch,
                 editTextCuisineType.getText().toString(),
-                editTextDescription.getText().toString(),
-                editTextPrice.getText().toString());
+                editTextPrice.getText().toString(),
+                editTextDescription.getText().toString()
+
+               );
 
 
     }
