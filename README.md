@@ -26,16 +26,32 @@ alt="Navigation drawer" width="300" height="540" border="10" /></a>
 alt="Navigation drawer" width="300" height="540" border="10" /></a>
 </p>
 
+<p> <center> <h1> <b> 4. Menu  <b> </center> </h1>
+<img src="https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Menu.jpeg"
+alt="Navigation drawer" width="300" height="540" border="10" /></a>
+</p>
 
+<p> <center> <h1> <b> 5. Cart  <b> </center> </h1>
+<img src="https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Cart.jpeg"
+alt="Navigation drawer" width="300" height="540" border="10" /></a>
+</p>
 
+<p> <center> <h1> <b> 6. Payment  <b> </center> </h1>
+<img src="https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Payment_Details.jpeg"
+alt="Navigation drawer" width="300" height="540" border="10" /></a>
+</p>
 
-![ScreenShot](https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Home.jpeg?raw=true)
-![ScreenShot](https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Sign_Up.jpeg?raw=true)
-![ScreenShot](https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Log_In.jpeg?raw=true)
-![ScreenShot](https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Menu.jpeg?raw=true)
-![ScreenShot](https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Cart.jpeg?raw=true)
-![ScreenShot](https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Payment_Details.jpeg?raw=true)
-![ScreenShot](https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Order_Number.jpeg?raw=true)
-![ScreenShot](https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Order_Description.jpeg?raw=true)
-![ScreenShot](https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Admin_Home.jpeg?raw=true)
+<p> <center> <h1> <b> 7. Order_Number  <b> </center> </h1>
+<img src="https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Order_Number.jpeg"
+alt="Navigation drawer" width="300" height="540" border="10" /></a>
+</p>
 
+<p> <center> <h1> <b> 8. Order_Description  <b> </center> </h1>
+<img src="https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Order_Description.jpeg"
+alt="Navigation drawer" width="300" height="540" border="10" /></a>
+</p>
+
+<p> <center> <h1> <b> 9. Admin_Home  <b> </center> </h1>
+<img src="https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Admin_Home.jpeg"
+alt="Navigation drawer" width="300" height="540" border="10" /></a>
+</p>
