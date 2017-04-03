@@ -1,7 +1,8 @@
-## Android-SnackBar
+## SnackBar Description
+ * SnackBar is a Food Ordering Application
  * SnackBar was a part of my Software Engineering course project
  * SnackBar has 3 users : Customer, Admin, Chef
- * This application is a food orderin application 
+
 
 ## Features
  * This is my first Android Application that I have made from scratch 
