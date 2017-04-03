@@ -11,17 +11,22 @@
  * I coded the application in just 6 days
 
  
-<p> <center> <h1> <b>  Home Page  <b> </center> </h1>
+<p> <center> <h1> <b> 1. Home Page  <b> </center> </h1>
 <img src="https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Home.jpeg"
 alt="Navigation drawer" width="300" height="540" border="10" /></a>
 </p>
-###2. Sign Up
+
+<p> <center> <h1> <b> 2. Sign Up  <b> </center> </h1>
 <img src="https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Sign_Up.jpeg"
 alt="Navigation drawer" width="300" height="540" border="10" /></a>
+</p>
 
-###3. Sign Up
+<p> <center> <h1> <b> 3. Log In  <b> </center> </h1>
 <img src="https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Log_In.jpeg"
 alt="Navigation drawer" width="300" height="540" border="10" /></a>
+</p>
+
+
 
 
 ![ScreenShot](https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Home.jpeg?raw=true)
