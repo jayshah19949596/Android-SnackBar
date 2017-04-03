@@ -14,9 +14,7 @@ import android.widget.Toast;
 
 public class AddDish extends AppCompatActivity {
     EditText dishName,cuisineType,description,price;
-    Button btnAddDishToMenu;
     DBMgr dataBaseAdapter;
-    Context context = this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,8 +38,6 @@ public class AddDish extends AppCompatActivity {
 
                 insert();
 
-
-
                 Toast.makeText(getApplicationContext(),
                         "Dish Added Successfully to the Menu ", Toast.LENGTH_LONG)
                         .show();
@@ -59,10 +55,6 @@ public class AddDish extends AppCompatActivity {
         String stringCuisineType = cuisineType.getText().toString();
         String stringDescription = description.getText().toString();
         String stringPrices = price.getText().toString();
-
-
-
-
 
         dataBaseAdapter.addDishToMenu(stringDishName,stringCuisineType,stringDescription,stringPrices);
 

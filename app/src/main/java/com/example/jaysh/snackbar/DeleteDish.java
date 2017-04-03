@@ -42,22 +42,22 @@ public class DeleteDish extends AppCompatActivity {
         if(dishName.getText().toString().length()==0){
             Toast.makeText(DeleteDish.this,"Please Enter EmailID",Toast.LENGTH_SHORT).show();
         }
+
         else {
             Log.d("Modify_Employee", "Nothing");
 
             Cursor getSingleMenuCursor = dataBaseAdapter.getSingleMenu(dishName.getText().toString());
 
             if(getSingleMenuCursor.getCount()==0) {
-                Toast.makeText(DeleteDish.this,"No such Dish to Delete",Toast.LENGTH_SHORT).show();
 
+                Toast.makeText(DeleteDish.this,"No such Dish to Delete",Toast.LENGTH_SHORT).show();
             }
 
             else {
+
                 dataBaseAdapter.deleteDish(dishName.getText().toString());
             }
-
         }
-
     }
 
 
@@ -83,8 +83,7 @@ public class DeleteDish extends AppCompatActivity {
                 return true;
             }
 
-            case android.R.id.home:
-            {
+            case android.R.id.home: {
                 Log.d("CartScreen","Backbutton:");
 
                 Intent intentMenu = new Intent(DeleteDish.this, DishTasks.class);

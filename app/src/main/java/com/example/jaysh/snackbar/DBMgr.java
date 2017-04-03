@@ -6,20 +6,19 @@ package com.example.jaysh.snackbar;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import android.preference.PreferenceManager;
 import android.util.Log;
-
-import java.util.ArrayList;
 import java.util.Iterator;
 
 public class DBMgr {
     static final String DATABASE_NAME = "snackbar.db";
+
     static final int DATABASE_VERSION = 12;
+
     public static final int NAME_COLUMN = 1;
+
     public final static String USERPROFILE_TABLE = "userProfile";
 
     public final static String USERPROFILE_ID = "_id";
@@ -123,11 +122,9 @@ public class DBMgr {
 
         Log.d("DBMgr","ORDER table query  : "+DATABASE_CREATE_ORDER);
 
-
         String s = String.valueOf(Preference.getInstance(mContext).loadBooleanKey(Preference.IS_FIRST_TIME, false));
 
         Log.d("Preferenece Value",s) ;
-
 
         db = dbHelper.getWritableDatabase();
         if(!Preference.getInstance(mContext).loadBooleanKey(Preference.IS_FIRST_TIME, false)) {
@@ -135,7 +132,6 @@ public class DBMgr {
             initialisingDataBase();
 
             Preference.getInstance(mContext).saveState(Preference.IS_FIRST_TIME, true);
-
 
         }
     }

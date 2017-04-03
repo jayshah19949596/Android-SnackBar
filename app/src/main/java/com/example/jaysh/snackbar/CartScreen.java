@@ -54,7 +54,7 @@ public class CartScreen extends AppCompatActivity {
 
         Log.d("CartScreen","Calling CartAdpater");
 
-        cartAdapter=new CartAdapter(this,R.layout.cart_list_view,MenuActivity.cartDishList);
+        cartAdapter=new CartAdapter(this, R.layout.cart_list_view, MenuActivity.cartDishList);
         cartListView.setAdapter(cartAdapter);
 
             //Iterator iterator = MenuActivity.cartDishList.iterator();

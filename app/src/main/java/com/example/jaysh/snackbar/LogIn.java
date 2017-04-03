@@ -12,19 +12,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-
-
-
-
-
-
-
-
-/*
-buttonSignin = id of Sign in button layout
-buttonSignIn =
- */
-
 public class LogIn extends AppCompatActivity implements View.OnClickListener {
     Button buttonSignIn,buttonLoginProfile, buttonSignUp;
     String password;
