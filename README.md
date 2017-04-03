@@ -11,10 +11,10 @@
  * I coded the application in just 6 days
 
  
-###1. Home Page
+<p> <center> <h1> <b>  Home Page  <b> </center> </h1>
 <img src="https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Home.jpeg"
 alt="Navigation drawer" width="300" height="540" border="10" /></a>
-
+</p>
 ###2. Sign Up
 <img src="https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Sign_Up.jpeg"
 alt="Navigation drawer" width="300" height="540" border="10" /></a>
