@@ -8,7 +8,7 @@
  * This is my first Android Application that I have made from scratch 
  * Used SQLite in the back end to store the data
  * I have used customised ArrayAdapters and customised CursorAdapter   
- * The customised Adapters uses VeiewHolder Pattern
+ * The customised Adapters uses ViewHolder Pattern
  * I coded the application in just 6 days
 
  
