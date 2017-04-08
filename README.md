@@ -12,7 +12,7 @@
  * I coded the application in just 6 days
 
  
-<p> <h3> <center><b> 1. Home Page  <b></center>  </h3>
+<p  align="center"> <h3> <center><b> 1. Home Page  <b></center>  </h3>
 <img src="https://github.com/jayshah19949596/Android-SnackBar/blob/master/Screenshots/Home.jpeg"
 alt="Navigation drawer" width="300" height="540" border="10" /></a>
 </p>
